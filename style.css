@@ -1,0 +1,13 @@
+label{
+    border: none;
+}
+.borders{
+    border: none;
+}
+.caption{
+    text-align: center;
+    font-weight: bold;
+}
+textarea{
+    border: none;
+}
