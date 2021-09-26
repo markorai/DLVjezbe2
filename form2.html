@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Software order form</h1>
+    <br>
+    <form action="">
+        <!-- License details  -->
+        <fieldset>
+            <legend>License details</legend>
+            <br>
+            <ul>
+                <li>
+                    <label for="email">Email address</label> <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="website">Website</label> <input type="text" id="website" name="website"
+                        placeholder="https://www.example.com" required>
+                </li>
+                <li>
+                    <label for="license">Number of licenses</label> <input type="text" id="license" name="license"
+                        placeholder="How many to buy(1-10)" required>
+
+                </li>
+            </ul>
+        </fieldset>
+        <!-- Billing details -->
+        <fieldset>
+            <legend>Billing details</legend>
+            <br>
+            <ul>
+                <li>
+                    <label for="name">Name</label> <input type="text" id="name" name="name" placeholder="First Last" required>
+                </li>
+                <li>
+                    <label for="adress">Adress</label> <textarea name="adress" id="adress" cols="30" rows="3"
+                        placeholder="House, number, street, city, state" required></textarea>
+                </li>
+                <li>
+                    <label for="country">Country</label> <select name="country" id="country" required>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="montenegro">Montenegro</option>
+                        <option value="serbia">Serbia</option>
+                        <option value="bosnia">Bosnia</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="phone">Phone <span style="font-style: italic;">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Include country prefix, e.g.">
+                </li>
+            </ul>
+        </fieldset>
+        <!-- Payment details -->
+        <fieldset>
+            <legend>Payment details </legend>
+            <ul>
+                <li>
+                    <label for="card">Card number</label> <input type="text" name="card" id="card"
+                        placeholder="As shown on the front of you" required>
+                </li>
+                <li>
+                    <label for="ccv">CCV code</label> <input type="number" name="ccv" id="ccv"
+                        placeholder="3-digit number on back of..." required>
+                </li>
+                <li>
+                    <label for="e_date">Expiry date</label> <input type="datetime" name="e_date" id="e_date"
+                        placeholder="YYYY-MM" required>
+                </li>
+            </ul>
+        </fieldset>
+            <input type="button" value="Place Your Order" style="border-radius: 20%;">
+            <br>
+    </form>
+</body>
+
+</html>
