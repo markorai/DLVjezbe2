@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>INT222 - Assignment #2 - forms.html</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/mycss.css" />
+    </head>
+
+    <body>
+        <form action="">
+            <table border="1">
+                <tr>
+                    <td colspan="2" class="caption">Pizza Shop 2.0</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" maxlength="20" required ></td>
+                </tr>
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td>
+                        <input type="radio" name="pizza" id="supreme"> <label for="supreme">Supreme</label>
+                        <br>
+                        <input type="radio" name="pizza" id="vegeterian"> <label for="vegeterian">Vegeterian</label>
+                        <br>
+                        <input type="radio" name="pizza" id="hawaiian"> <label for="hawaiian">Hawaiian</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td>
+                        <select name="sauce" id="">
+                            <option value="tomato">Tomato</option>
+                            <option value="garlic">Garlic</option>
+                            <option value="hot_s">Hot Sauce</option>
+                            <option value="mayo">Mayo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <input type="checkbox" name="cheese" id="cheese"> <label for="cheese">Extra Cheese</label>
+                        <input type="checkbox" name="gluten" id="gluten"> <label for="gluten">Gluten Free Base</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders">Delivery Instructions:</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="delivery" id="" class="delivery" cols="60" rows="4" maxlength="100" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="borders"><input type="button" value="Send my Order"></td>
+                </tr>
+            </table>
+        </form>
+
+
+    </html>
+</body>
+
+</html>
